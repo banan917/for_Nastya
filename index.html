@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Насте ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="screen active" id="screen1">
+    <h1>Привет, Настя 💌</h1>
+    <p>Этот сайт создан специально для тебя</p>
+    <button onclick="nextScreen()">Нажми</button>
+</div>
+
+<div class="screen" id="screen2">
+    <h2>Почему ты особенная?</h2>
+    <div id="typing"></div>
+    <button onclick="nextScreen()">Дальше</button>
+</div>
+
+<div class="screen" id="screen3">
+    <h2>Немного о нас</h2>
+    <p>Каждый момент с тобой — ценность ❤️</p>
+    <div class="timeline">
+        <div class="event">💫 Знакомство</div>
+        <div class="event">🌙 Первые разговоры</div>
+        <div class="event">💖 Сближение</div>
+        <div class="event">✨ Настоящее</div>
+    </div>
+    <button onclick="nextScreen()">Дальше</button>
+</div>
+
+<div class="screen" id="screen4">
+    <h2>Сюрприз 🎁</h2>
+    <p>Нажми на сердце...</p>
+    <div class="big-heart" onclick="showSecret()">❤️</div>
+    <div id="secretText"></div>
+</div>
+
+<div class="screen" id="screen5">
+    <h1>Настя ❤️</h1>
+    <p>Ты невероятная. Спасибо, что ты есть.</p>
+    <p>Этот сайт будет напоминать, что ты очень дорога мне 💖</p>
+</div>
+
+<audio id="bgMusic" src="music.mp3" loop></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
